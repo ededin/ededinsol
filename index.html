@@ -2,210 +2,81 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-html {
-  scroll-behavior: smooth;
-}
-body {
-  min-height: 10px;
-  background-color: #212121 ;
-  font-family: Arial, Helvetica, sans-serif;
-  position: relative;
-}
-@import "https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700";
-*, *:after, *:before {
-  margin: 0;
-  padding: 0;
-}
-
-.svg-container {
-
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: -1;
-}
-
-svg path {
-  transition: .1s;
-}
-svg:hover path {
-  d: path("M 800 100 Q 400 100 0 100 L 0 0 L 800 0 L 800 100 Z");
-}
-
-
-header {
-  color: #fff;
-  padding-top: 40px;
-  padding-bottom:17vw;
-  text-align: center;
-}
-
-
-footer {
-
-  background: #dddee1;
-  padding: 5vh 0;
-  text-align: center;
-  position: relative;
-}
-
-small {
-  opacity: .5;
-  font-weight: 300;
-}
-small a {
-  color: inherit;
-}
-
-
-
-
-nav{
-  background: transparent;
-   margin: auto;
-    position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-}
-nav:hover{
-  background: #212121;
-}
-
-nav .menuItems {
- display: block;
-  text-align: center;
-margin: 0 auto;
-font-size: 25px;
- 
-}
-nav .menuItems li {
-  margin: 0 auto;
-  text-align: center;
-display: inline-block;
- padding: 0 20px;
-  position: relative;
-  text-align: center;
-  background: transparent;
-}
-nav .menuItems li a {
-  text-decoration: none;
-  color: #dbdbdb;
-  font-weight: 400;
-text-align: center;
-  transition: all 0.5s ease-in-out;
-  position: relative;
-}
-nav .menuItems li a::before {
-  content: attr(data-item);
-  transition: 0.5s;
-  color: #14ffec;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 0;
-  overflow: hidden;
-  text-align: center;
-}
-nav .menuItems li a:hover::before {
-  width: 100%;
-  transition: all 0.5s ease-in-out;
-}
-
-
-
-
-.colour-block {
-  background:#EEEEEE;
-  width:80%;
-  padding:5% 10% 0% 10%;
-  color:#000;
-}
-.white-block {
-  background:transparent;
- width:80%;
-  padding:5% 10% 5% 10%;
-  color:#EEEEEE;
-}
-h1 {
-  text-align:center;
-  font-size:80px;
-  font-family:'wire one', serif;
-  font-weight:normal;
-}
-p {
-  font-size:20px;
-  text-align:center;
-  font-family:'Raleway', serif;
-}
-
-
-.skew-c1{
-  width:100%;
-  height:50px;
-  position:relative;
-  left:0px;
-  background: transparent;
-}
-.skew-cc{
-  width:100%;
-  height:100px;
-  position:relative;
-  left:0px;
-  background: linear-gradient(to right bottom, #EEEEEE 49%, #212121 50%),linear-gradient(-50deg, #ffffff 16px, #000 0);
-     z-index:-1;
-}
-
-
-
-.skew-c{
-  width:100%;
-  height:70px;
-  position:relative;
-  left:0px;
-  background: linear-gradient(to left bottom, #212121 49%, #EEEEEE 50%);
-   z-index:-1;
-}
-section {
-  position: relative;
-  scroll-snap-align: center;
-  z-index:-1;
-}
-
-
-</style>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-<body>
-  <div class="svg-container">
-    <svg viewbox="0 0 800 400" class="svg">
-    
-      <path id="curve" fill="#EEEEEE" d="M 800 100 Q 400 200 0 100 L 0 0 L 800 0 L 800 100 Z">
-        
-      </path>
-      <image  width= 100% height=37% xlink:href="assets/images/Name-website.png">
-    </svg>
-  </div>
+<body >
+<header id="Home">
+	<div class="overlay">
+<h1 class="h1">EDEDIN</h1>
+<h3>Solutions</h3>
+<p>We are solution for every problem</p>
+	<br>
+	<button type="button" oncick="myFunction"><a style="text-decoration:none" href="#Idea">READ MORE</a></button>
+		</div>
+</header>
 
-  <header>
-  </header>
 <nav class="sticky">
     <ul class="menuItems">
-      <li><a href='#' data-item='Home'>Home</a></li>
-      <li><a href="assets/pages/projects.html" data-item='Projects'>Projects</a></li>
+      <li><a href='#Home' data-item='Home'>Home</a></li>
+      <li><a href='#Products' data-item='Products'>Products</a></li>
       <li><a href='#Services' data-item='Services'>Services</a></li>
       <li><a href='#About' data-item='About'>About</a></li>
       <li><a href='#' data-item='Reach'>Reach</a></li>
     </ul>
   </nav>
    <link href='https://fonts.googleapis.com/css?family=Wire+One|Raleway:300' rel='stylesheet' type='text/css'>
-<section id="Home">
-<div class="skew-c1"></div>
-<div class="colour-block">
-<h1>IDEA</h1>
-  <p>In this perpetual world of vibrant ideas and technologies we pave a way for you to enter into this new era of lifeline we have ‘N’ number of projects and services that experiences you a virtual platform of smartness and safety.</p>
+<section id="Idea">
+<<div class="white-block">
+  <h1>IDEA</h1>
+  <p align="center">In this perpetual world of vibrant ideas and technologies we pave a way for you to enter into this new era of lifeline we have ‘N’ number of projects and services that experiences you a virtual platform of smartness and safety.</p>
+</div>
+
+</section>
+<section id="Products">
+<<div class="white-block">
+<h1>PRODUCTS</h1>
+</div>
+<div class="cards">
+  <div class="card content">
+    <div class="card-content">
+      <div class="card-img">
+        <img src="assets/images/sanitizer.png" alt="Gamer">
+      </div>
+      <div class="card-label">smart products</div>
+      <div class="card-title">
+     Automatic sanitizer
+      </div>
+    </div>
+  </div>
+  <div class="card content">
+    <div class="card-content">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="keyboard">
+      </div>
+      <div class="card-label">
+        Technology
+      </div>
+      <div class="card-title">
+        Google Stadia: The Future of Gaming
+      </div>
+    </div>
+  </div>
+  <div class="card content">
+    <div class="card-content">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1519326844852-704caea5679e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2034&q=80" alt="Controller">
+      </div>
+      <div class="card-label">
+        Consoles
+      </div>
+      <div class="card-title">
+        PS5 won't launch before mid-2020
+      </div>
+    </div>
+  </div>
+  <div class="card link">
+    <div class="form-title"><a href="products.html" style="text-decoration:none">Explore</a></div>
+  </div>
 </div>
 </section>
 <section id="Projects">
@@ -232,47 +103,48 @@ section {
 
 
 
-  <footer>
-    <p>And, the footer.</p>
-    <small>🕷 Wish you luck, <a href="http://armantaherian.com">Arman</a>.</small>
-  </footer>
+  <!-- <footer> -->
+    <!-- <p>And, the footer.</p> -->
+    <!-- <small>🕷 Wish you luck, <a href="http://armantaherian.com">Arman</a>.</small> -->
+  <!-- </footer> -->
    
-  <script>
-  (function() {
-  var $curve = document.getElementById("curve");
-  var last_known_scroll_position = 0;
-  var defaultCurveValue = 200;
-  var curveRate = 2;
-  var ticking = false;
-  var curveValue;
+  <!-- <script> -->
+  <!-- (function() { -->
+  <!-- var $curve = document.getElementById("curve"); -->
+  <!-- var last_known_scroll_position = 0; -->
+  <!-- var defaultCurveValue = 150; -->
+  <!-- var curveRate = 2; -->
+  <!-- var ticking = false; -->
+  <!-- var curveValue; -->
 
 
-  function scrollEvent(scrollPos) {
-    if (scrollPos >= 0 && scrollPos < defaultCurveValue) {
-      curveValue = defaultCurveValue - parseFloat(scrollPos / curveRate);
-      $curve.setAttribute(
-        "d",
-        "M 800 100 Q 400 " + curveValue + " 0 100 L 0 0 L 800 0 L 800 100 Z"
-      );
-    }
-  }
+  <!-- function scrollEvent(scrollPos) { -->
+    <!-- if (scrollPos >= 0 && scrollPos < defaultCurveValue) { -->
+      <!-- curveValue = defaultCurveValue - parseFloat(scrollPos / curveRate); -->
+      <!-- $curve.setAttribute( -->
+        <!-- "d", -->
+        <!-- "M 800 50 Q 400 " + curveValue + " 0 50 L 0 0 L 800 0 L 800 50 Z" -->
+      <!-- ); -->
+    <!-- } -->
+  <!-- } -->
 
 
-  window.addEventListener("scroll", function(e) {
-    last_known_scroll_position = window.scrollY;
+  <!-- window.addEventListener("scroll", function(e) { -->
+    <!-- last_known_scroll_position = window.scrollY; -->
 
-    if (!ticking) {
-      window.requestAnimationFrame(function() {
-        scrollEvent(last_known_scroll_position);
-        ticking = false;
-      });
-    }
+    <!-- if (!ticking) { -->
+      <!-- window.requestAnimationFrame(function() { -->
+        <!-- scrollEvent(last_known_scroll_position); -->
+        <!-- ticking = false; -->
+      <!-- }); -->
+    <!-- } -->
 
-    ticking = true;
-  });
-})();
+    <!-- ticking = true; -->
+  <!-- }); -->
+<!-- })(); -->
 
-  </script>
+  <!-- </script> -->
+
 </body>
 </html>
     
