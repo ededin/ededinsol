@@ -266,3 +266,27 @@ section {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+
+
+@media only screen and (max-width: 768px) {
+	
+  /* For mobile phones: */
+  
+  .white-block {
+  width:100%;
+
+}
+.cards {
+  width: 90%;
+}
+
+header {
+	border-radius: 0 0 85% 85% / 10%;
+}
+nav .menuItems {
+
+font-size: 15px;
+ 
+}
+}
+  
