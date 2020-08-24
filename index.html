@@ -1,150 +1,87 @@
 <!DOCTYPE html>
 <html>
-<head>
+<title>EDEDIn Solutions</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-</head>
-<body >
-<header id="Home">
-	<div class="overlay">
-<h1 class="h1">EDEDIN</h1>
-<h3>Solutions</h3>
-<p>We are solution for every problem</p>
-	<br>
-	<button type="button" oncick="myFunction"><a style="text-decoration:none" href="#Idea">READ MORE</a></button>
-		</div>
-</header>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<nav class="sticky">
-    <ul class="menuItems">
-      <li><a href='#Home' data-item='Home'>Home</a></li>
-      <li><a href='#Products' data-item='Products'>Products</a></li>
-      <li><a href='#Services' data-item='Services'>Services</a></li>
-      <li><a href='#About' data-item='About'>About</a></li>
-      <li><a href='#' data-item='Reach'>Reach</a></li>
-    </ul>
-  </nav>
-   <link href='https://fonts.googleapis.com/css?family=Wire+One|Raleway:300' rel='stylesheet' type='text/css'>
-<section id="Idea">
-<div class="white-block">
-  <h1>IDEA</h1>
-  <p align="center">In this perpetual world of vibrant ideas and technologies we pave a way for you to enter into this new era of lifeline we have ‘N’ number of projects and services that experiences you a virtual platform of smartness and safety.</p>
-</div>
+<body class="black">
 
-</section>
-<section id="Products">
-<div class="white-block">
-<h1>PRODUCTS</h1>
-</div>
-<div class="cards">
-  <div class="card content">
-    <div class="card-content">
-      <div class="card-img">
-        <img src="assets/images/sanitizer.png" alt="Gamer">
-      </div>
-      <div class="card-label">smart products</div>
-      <div class="card-title">
-     Automatic sanitizer
-      </div>
-    </div>
-  </div>
-  <div class="card content">
-    <div class="card-content">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="keyboard">
-      </div>
-      <div class="card-label">
-        Technology
-      </div>
-      <div class="card-title">
-        Google Stadia: The Future of Gaming
-      </div>
-    </div>
-  </div>
-  <div class="card content">
-    <div class="card-content">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1519326844852-704caea5679e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2034&q=80" alt="Controller">
-      </div>
-      <div class="card-label">
-        Consoles
-      </div>
-      <div class="card-title">
-        PS5 won't launch before mid-2020
-      </div>
-    </div>
-  </div>
-  <div class="card link">
-    <div class="form-title"><a href="products.html" style="text-decoration:none">Explore</a></div>
+
+<nav class="sidebar bar-block small hide-small center">
+
+  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+  <a href="#" class="bar-item button padding-large black">
+    <i class="fa fa-home xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="bar-item button padding-large hover-black">
+    <i class="fa fa-user xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="bar-item button padding-large hover-black">
+    <i class="fa fa-eye xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="bar-item button padding-large hover-black">
+    <i class="fa fa-envelope xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+
+<div class="top hide-large hide-medium" id="myNavbar">
+  <div class="bar black opacity hover-opacity-off center small">
+    <a href="#" class="bar-item button" style="width:25% !important">HOME</a>
+    <a href="#about" class="bar-item button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="bar-item button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="bar-item button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
-</section>
-<section id="Projects">
-<div class="skew-cc"></div>
-<div class="white-block">
-  <h1>Skewed Counter-Clockwise.</h1>
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+
+<div class="padding-large" id="main">
+
+  <header class="container padding-32 center black" id="home">
+    <h1 class="jumbo">EDEDIN</h1>
+    <p>Solution for every Problem</p>
+    <img src="assets/images/logo.png" alt="logo" class="image">
+  </header>
+
+
+  <div class="content justify text-grey padding-64" id="about">
+    <h2 class="text-light-grey">Idea</h2>
+    <hr style="width:200px" class="opacity">
+    <p>In this perpetual world of vibrant ideas and technologies we pave a way for you to enter into this new era of lifeline we have ‘N’ number of projects and services that experiences you a virtual platform of smartness and safety.</p>
+
+
+  <div class="padding-64 content text-grey" id="contact">
+    <h2 class="text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="opacity">
+
+    <div class="section">
+      <p><i class="fa fa-map-marker fa-fw text-white xxlarge margin-right"></i> Chicago, US</p>
+      <p><i class="fa fa-phone fa-fw text-white xxlarge margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw text-white xxlarge margin-right"> </i> Email: mail@mail.com</p>
+    </div><br>
+
+
+  </div>
+  
+
+  <footer class="content padding-64 text-grey xlarge">
+    <i class="fa fa-facebook-official hover-opacity"></i>
+    <i class="fa fa-instagram hover-opacity"></i>
+    <i class="fa fa-snapchat hover-opacity"></i>
+    <i class="fa fa-pinterest-p hover-opacity"></i>
+    <i class="fa fa-twitter hover-opacity"></i>
+    <i class="fa fa-linkedin hover-opacity"></i>
+  </footer>
+
+
 </div>
-</section>
-<section id="Services">
-<div class="skew-c"></div>
-<div class="colour-block">
-  <h1>Skewed Clockwise.</h1>
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-</div>
-</section>
-<section id="About">
-<div class="skew-cc"></div>
-<div class="white-block">
-  <h1>About Us</h1>
-  <p>EDEDIN solutions are brought up by the young entrepreneurs from Coimbatore who enhances smart ways in home and industrial applications. Automation is the main concept here we are the solutions for your every problem. We are induced by this society, the lack of technology here plays with our daily life that consumes our precious time. Automation will help you save time we here to make everything ease and simple for handling and vice versa</p>
-</div>
-</section>
-
-
-
-  <!-- <footer> -->
-    <!-- <p>And, the footer.</p> -->
-    <!-- <small>🕷 Wish you luck, <a href="http://armantaherian.com">Arman</a>.</small> -->
-  <!-- </footer> -->
-   
-  <!-- <script> -->
-  <!-- (function() { -->
-  <!-- var $curve = document.getElementById("curve"); -->
-  <!-- var last_known_scroll_position = 0; -->
-  <!-- var defaultCurveValue = 150; -->
-  <!-- var curveRate = 2; -->
-  <!-- var ticking = false; -->
-  <!-- var curveValue; -->
-
-
-  <!-- function scrollEvent(scrollPos) { -->
-    <!-- if (scrollPos >= 0 && scrollPos < defaultCurveValue) { -->
-      <!-- curveValue = defaultCurveValue - parseFloat(scrollPos / curveRate); -->
-      <!-- $curve.setAttribute( -->
-        <!-- "d", -->
-        <!-- "M 800 50 Q 400 " + curveValue + " 0 50 L 0 0 L 800 0 L 800 50 Z" -->
-      <!-- ); -->
-    <!-- } -->
-  <!-- } -->
-
-
-  <!-- window.addEventListener("scroll", function(e) { -->
-    <!-- last_known_scroll_position = window.scrollY; -->
-
-    <!-- if (!ticking) { -->
-      <!-- window.requestAnimationFrame(function() { -->
-        <!-- scrollEvent(last_known_scroll_position); -->
-        <!-- ticking = false; -->
-      <!-- }); -->
-    <!-- } -->
-
-    <!-- ticking = true; -->
-  <!-- }); -->
-<!-- })(); -->
-
-  <!-- </script> -->
 
 </body>
 </html>
-    
