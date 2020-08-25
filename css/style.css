@@ -97,7 +97,7 @@ h6{
 	font-family:serif
 	}
 h1,h2,h3,h4,h5,h6{
-	ont-family:"Segoe UI",Arial,sans-serif;
+	f ont-family:"Segoe UI",Arial,sans-serif;
 	font-weight:400;
 	margin:10px 0
 	}
@@ -236,7 +236,7 @@ a{
 	}
 	
 body, h1,h2,h3,h4,h5,h6 {
-font-family: "Montserrat", sans-serif
+font-family: "Montserrat", sans-serif;
 }
 .sidebar {
 width: 120px;background: #222;
@@ -248,13 +248,14 @@ margin-left: 120px
 
 
 .products{
-  width:80vw;
+  width:60vw;
   height: auto;
   display: flex;
   margin:auto;
   flex-flow: row;
   perspective: 1000px;
   perspective-origin: center;
+
 }
 .col{
   height:  100%;
@@ -286,6 +287,7 @@ margin-left: 120px
   padding: 8px;
   text-align: center;
   opacity: .89;
+
 }
 
 .card-container:hover,
@@ -297,8 +299,8 @@ margin-left: 120px
 
 
 .card{
-  border-radius: 5px;
-  height: 100%;
+
+  height: 10vw;
   transition: all 300ms ease-out;
   align-items: center;
   display: flex;
@@ -309,6 +311,7 @@ margin-left: 120px
   z-index: 0;
   opacity: .89;
   padding: 13px 21px;
+  
 }
 
 .card:before,
@@ -320,7 +323,7 @@ margin-left: 120px
   display: block;
   width: 100%;
   height: 100%;
-  opacity: .21;
+  opacity: 1;
   transition: transform 300ms ease;
   transform: scale(.98);
 }
@@ -340,42 +343,36 @@ margin-left: 120px
 
 .col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia22474-2000.jpg?itok=cajl1lYH');
+	  border-radius:5%;
 }
 
 .col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m18-090.jpg?itok=TQ8Fuk4x');
+	   border-radius:5%;
 }
 
 .col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/40808879360_18c96d62f1_o.jpg?itok=NttmTWPK');
+	  border-radius:5%;
 }
 
 .card:after{
   background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,0.89) 100%);
 }
 
-.h4{
-  text-align: left;
-  color:black;
-  font-size: 18px;
-  font-weight:400;
-  transform: translateY(5px);
-  transition: transform 450ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
-  max-width: 320px;
-  outline: 1px solid transparent;
-}
 
 
 .card > span{
   font-size: 34px;
   opacity: 0;
-    color:black;
+    color:white;
   transform: translateX(-3px);
   transition: all 300ms ease;
 }
 
 .card-container:hover > .card > h4,
 .card-container:focus > .card > h4{
+	
   transform: translateY(-13px);
 }
 
@@ -387,6 +384,111 @@ margin-left: 120px
   
 }
 
+.colser{
+  height:  100%;
+  transition: transform 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000), opacity 300ms ease;
+  transform: translateZ(34px) scale(.98);
+  flex: 0 0 33.3333%; 
+  position: relative;
+}
+.colser:nth-of-type(1){
+  transform: rotateY(5deg) translateZ(34px) scale(.98);
+}
+
+.colser:nth-of-type(3){
+  transform: rotateY(-5deg) translateZ(34px) scale(.98);
+}
+
+.colser:hover,
+.colser:focus{
+  transform: translateZ(34px);
+  transition: transform 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000), opacity 300ms ease;
+}
+.cservices{
+
+  height: 10vw;
+  transition: all 300ms ease-out;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 0;
+  opacity: .89;
+  padding: 13px 21px;
+  
+}
+
+.cservices:before,
+.cservices:after{
+  content: '';
+  position: absolute;
+  left:0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: transform 300ms ease;
+  transform: scale(.98);
+}
+.card-container:hover .cservices:before,
+.card-container:hover .cservices:after,
+.card-container:focus .cservices:before,
+.card-container:focus .cservices:after{
+  opacity: .34;
+  transform: scale(1);
+}
+.cservices:before{
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+
+.colser:nth-of-type(1) .card-container:nth-of-type(1) .cservices:before{
+      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia22474-2000.jpg?itok=cajl1lYH');
+	  border-radius:5%;
+}
+
+.colser:nth-of-type(2) .card-container:nth-of-type(1) .cservices:before{
+      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m18-090.jpg?itok=TQ8Fuk4x');
+	   border-radius:5%;
+}
+
+.colser:nth-of-type(3) .card-container:nth-of-type(1) .cservices:before{
+      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/40808879360_18c96d62f1_o.jpg?itok=NttmTWPK');
+	  border-radius:5%;
+}
+
+.cservices:after{
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,0.89) 100%);
+}
+
+
+
+.cservices > span{
+  font-size: 34px;
+  opacity: 0;
+    color:white;
+  transform: translateX(-3px);
+  transition: all 300ms ease;
+}
+
+.card-container:hover > .cservices > h4,
+.card-container:focus > .cservices > h4{
+	
+  transform: translateY(-13px);
+}
+
+.card-container:hover > .cservices > span,
+.card-container:focus > .cservices > span{
+ opacity: 1;
+    transform: translateX(3px);
+  animation: slideRight 300ms ease;
+  
+}
 @media only screen and (max-width: 600px) {
 			.image{
 	height:95vw;
@@ -412,13 +514,18 @@ margin-left: 120px
   .col:hover{
       transform: none;
   }
-  
-  .h4{
-    padding-bottom: auto;
-    font-size: 18px;
+  .colser:nth-of-type(1),
+  .colser:nth-of-type(2),
+  .colser:nth-of-type(3),
+  .colser:hover{
+      transform: none;
   }
+ 
   
 .card > span{
+      display: none;
+  }
+  .cservices > span{
       display: none;
   }
 }
@@ -427,18 +534,13 @@ margin-left: 120px
 .card > span{
       display: none;
   }
-}
-@media (max-width: 860px) and (max-height: 540px){
-  .h4{
-    font-size: 14px;
+  .cservices > span{
+      display: none;
   }
 }
 
-@media (max-width: 620px) and (max-height: 540px){
-  .h4{
-    font-size: 13px;
-  }
-}
+
+
 @media (max-width:600px){
 	.modal-content
 {margin:0 10px;width:auto!important}.modal{padding-top:30px}
@@ -463,9 +565,7 @@ margin-left: 120px
 	.modal-content{
 		width:500px
 		}
-	.h4{
-    font-size: 17px;
-  }
+
 .modal{
 	padding-top:50px
 	}
