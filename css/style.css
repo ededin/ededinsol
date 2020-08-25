@@ -99,7 +99,7 @@ h6{
 h1,h2,h3,h4,h5,h6{
 	f ont-family:"Segoe UI",Arial,sans-serif;
 	font-weight:400;
-	margin:10px 0
+	margin:auto ;
 	}
 .wide{
 	letter-spacing:4px
@@ -255,7 +255,7 @@ margin-left: 120px
   flex-flow: row;
   perspective: 1000px;
   perspective-origin: center;
-
+  align-items:center;
 }
 .col{
   height:  100%;
@@ -405,8 +405,8 @@ margin-left: 120px
   transition: transform 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000), opacity 300ms ease;
 }
 .cservices{
-
-  height: 10vw;
+width:15vw;
+  height: 15vw;
   transition: all 300ms ease-out;
   align-items: center;
   display: flex;
@@ -449,46 +449,34 @@ margin-left: 120px
 
 .colser:nth-of-type(1) .card-container:nth-of-type(1) .cservices:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia22474-2000.jpg?itok=cajl1lYH');
-	  border-radius:5%;
+	  border-radius:50%;
 }
 
 .colser:nth-of-type(2) .card-container:nth-of-type(1) .cservices:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m18-090.jpg?itok=TQ8Fuk4x');
-	   border-radius:5%;
+	   border-radius:50%;
 }
 
 .colser:nth-of-type(3) .card-container:nth-of-type(1) .cservices:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/40808879360_18c96d62f1_o.jpg?itok=NttmTWPK');
-	  border-radius:5%;
+	  border-radius:50%;
 }
 
 .cservices:after{
   background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,0.89) 100%);
 }
-
-
-
-.cservices > span{
-  font-size: 34px;
-  opacity: 0;
-    color:white;
-  transform: translateX(-3px);
-  transition: all 300ms ease;
+.cservices > h4{
+	opacity:0;
 }
+
 
 .card-container:hover > .cservices > h4,
 .card-container:focus > .cservices > h4{
-	
+	opacity:1;
   transform: translateY(-13px);
 }
 
-.card-container:hover > .cservices > span,
-.card-container:focus > .cservices > span{
- opacity: 1;
-    transform: translateX(3px);
-  animation: slideRight 300ms ease;
-  
-}
+
 @media only screen and (max-width: 600px) {
 			.image{
 	height:95vw;
@@ -504,9 +492,17 @@ margin-left: 120px
 @media (max-width: 540px){
   .products{
     flex-flow: column;
+	width:80vw;
     perspective: none;
     height: auto;
   }
+  .card{
+  height: 30vw;
+}
+.cservices{
+width:30vw;
+  height: 30vw;
+}
   
   .col:nth-of-type(1),
   .col:nth-of-type(2),
@@ -525,16 +521,13 @@ margin-left: 120px
 .card > span{
       display: none;
   }
-  .cservices > span{
-      display: none;
-  }
 }
-
+.divid{
+	 padding-top:17%;
+	 padding-bottom:20%;
+}
 @media (max-height: 599px){
 .card > span{
-      display: none;
-  }
-  .cservices > span{
       display: none;
   }
 }
@@ -570,10 +563,14 @@ margin-left: 120px
 	padding-top:50px
 	}
 	 .products{
+		 width:80vw;
     flex-flow: column;
     perspective: none;
     height: auto;
   }
+  .cservices > h4{
+	font-size:4vw;
+}
 	}
 @media (min-width:993px)
 {
