@@ -480,6 +480,15 @@ width:15vw;
   transform: translateY(-13px);
 }
 
+.divid{
+	 padding-top:10%;
+	 padding-bottom:20%;
+}
+.divid-content{
+	 padding-top:10%;
+	 padding-bottom:20%;
+}
+
 #topbtn {
   display: none;
   position: fixed;
@@ -563,10 +572,7 @@ width:30vw;
       display: none;
   }
 }
-.divid{
-	 padding-top:10%;
-	 padding-bottom:20%;
-}
+
 @media (max-height: 599px){
 .card > span{
       display: none;
@@ -609,10 +615,14 @@ width:30vw;
 	opacity:1;
 }
 .card > h4{
-	opacity:1;
-
-	
+	opacity:1;	
 }
+
+.divid-content{
+	 padding-top:35%;
+	 padding-bottom:20%;
+}
+
 .cservices:before,
 .cservices:after{
   opacity: .34;
