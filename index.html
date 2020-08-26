@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <title>EDEDIn Solutions</title>
@@ -12,7 +13,7 @@
 
 <nav class="sidebar bar-block small hide-small center">
 <a href="#main">
-  <img src="assets/images/Name.png" style="width:100%">
+  <img src="assets/images/name.png" style="width:100%">
   </a>
   <a href="#home" class="bar-item button padding-large hover-black">
     <i class="fa fa-home xxlarge"></i>
@@ -60,7 +61,7 @@
   </header>
 
 <!--Idea-->
-<div id="home" class="divid-content ">
+<div id="home" class="divid ">
   <div class="content justify text-grey padding-64" id="home">
     <h2 class="text-grey">Idea</h2>
     <hr style="width:200px" class="opacity">
@@ -148,7 +149,7 @@
 </div>
 </div>
 <!-- About -->
-<div id="about" class="divid-content ">
+<div id="about" class="divid ">
 
   <div class="content justify text-grey padding-64" id="home">
     <h2 class="text-grey">About US</h2>
@@ -201,6 +202,12 @@ function scrollFunction() {
   } else {
     mybutton.style.display = "none";
   }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 </script>
 </body>
