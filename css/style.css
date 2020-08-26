@@ -448,17 +448,17 @@ width:15vw;
 
 
 .colser:nth-of-type(1) .card-container:nth-of-type(1) .cservices:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia22474-2000.jpg?itok=cajl1lYH');
+      background-image: url("../assets/images/wiring.png");
 	  border-radius:50%;
 }
 
 .colser:nth-of-type(2) .card-container:nth-of-type(1) .cservices:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m18-090.jpg?itok=TQ8Fuk4x');
+      background-image: url('../assets/images/services.png');
 	   border-radius:50%;
 }
 
 .colser:nth-of-type(3) .card-container:nth-of-type(1) .cservices:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/40808879360_18c96d62f1_o.jpg?itok=NttmTWPK');
+      background-image: url('../assets/images/computer.png');
 	  border-radius:50%;
 }
 
@@ -476,11 +476,25 @@ width:15vw;
   transform: translateY(-13px);
 }
 
+#topbtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
 
+#topbtn:hover {
+  background-color: #555;
+}
 @media only screen and (max-width: 600px) {
-			.image{
-	height:95vw;
-	}
 #main {margin-left: 0}
 }
 
@@ -496,6 +510,9 @@ width:15vw;
     perspective: none;
     height: auto;
   }
+  .image{
+	height:80vw;
+	}
   .card{
   height: 30vw;
 }
@@ -523,7 +540,7 @@ width:30vw;
   }
 }
 .divid{
-	 padding-top:17%;
+	 padding-top:10%;
 	 padding-bottom:20%;
 }
 @media (max-height: 599px){
@@ -558,7 +575,9 @@ width:30vw;
 	.modal-content{
 		width:500px
 		}
-
+.image{
+	height:80vw;
+	}
 .modal{
 	padding-top:50px
 	}
@@ -768,7 +787,9 @@ width:30vw;
 	padding-top:64px!important;
 	padding-bottom:64px!important
 	}
-
+.padding-top{
+	padding-top:20vw!important;
+	}
 .button:hover{
 	color:#000!important;
 	background-color:#ccc!important
