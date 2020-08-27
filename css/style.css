@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 html{
 	box-sizing:border-box;
 	scroll-behavior:smooth;
@@ -54,7 +54,6 @@ small
 		vertical-align:baseline
 		}
 sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
-code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
 button,input,select,textarea,optgroup{
 	font:inherit;
 	margin:0
@@ -74,7 +73,7 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 [type=search]::-webkit-search-decoration{-webkit-appearance:none}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
-html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+html,body{font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1{
 	font-size:36px
 	}
@@ -97,9 +96,9 @@ h6{
 	font-family:serif
 	}
 h1,h2,h3,h4,h5,h6{
-	f ont-family:"Segoe UI",Arial,sans-serif;
 	font-weight:400;
 	margin:auto ;
+	text-align:center;
 	}
 .wide{
 	letter-spacing:4px
@@ -235,8 +234,11 @@ a{
 	max-width:1140px;
 	}
 	
-body, h1,h2,h3,h4,h5,h6 {
+body,h2,h3,h4,h5,h6 {
 font-family: "Montserrat", sans-serif;
+}
+h1{
+	font-family: 'Krona One', sans-serif;
 }
 .sidebar {
 width: 120px;background: #222;
@@ -775,6 +777,7 @@ width:30vw;
 			font-size:48px!important;
 			}
 			.jumbo{
+				
 				font-size:64px!important;
 			}
 .left-align
