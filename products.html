@@ -325,6 +325,38 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     border-radius: 4px;
 }
 
+.alert {
+text-align:center;
+width:100%;
+  padding: 20px;
+  background-color: grey;
+  color: white;
+
+}
+#msg {
+position:fixed;
+display:none;
+z-index=5;
+
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+
+
 @media only screen and (max-width: 768px){
     .styled-input {
         width:100%;
@@ -457,7 +489,10 @@ padding-bottom:20%;
 </head>
 <body class="black">
 
-
+<div class="alert" id="msg">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Done!</strong> We will revert back soon...
+</div>
 
 <nav class="sidebar bar-block small hide-small center">
 <a href="#main">
@@ -730,6 +765,7 @@ function on(n) {
 
 function off() {
   document.getElementById("overlay").style.display = "none";
+  document.getElementById("msg").style.display = "block";
 }
 
 
