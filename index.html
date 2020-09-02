@@ -1,38 +1,294 @@
 <!DOCTYPE html>
 <html>
-<title>EDEDIn Solutions</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EDEDIn Products</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
 
+@import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
+
+body {
+background: #000;	
+	}
+	.mySlides {display: none}
+img {
+display: block;
+margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  opacity:.6;
+}
+.slideshow-container {
+margin:auto;
+  width: 80%;
+  height:100%;
+  position: relative;
+  
+}
+.sec{
+padding-top:10%;
+padding-bottom:20%;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+#container{
+
+	background: #757575;
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 30vw;
+	width: 80%;
+	
+}
+
+
+
+.product-even {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 2vw;
+	height: 100%;
+	float: right;
+	width: 50%;
+
+}
+.product-odd {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 2vw;
+	height: 100%;
+	float: left;
+	width: 50%;
+
+}
+
+#container .product-odd h1,.product-even h1{
+	font-family: 'Old Standard TT', serif;
+	display: inline-block;
+	position: relative;
+	font-size: 3vw;
+	color: #3a3a3a;
+	margin: 0;
+	
+}
+
+
+
+
+
+#container .product-odd > p {
+	font-family: 'Farsan', cursive;
+	text-align: justify;
+	font-size: 1.5VW;
+	color: #f1f1f1;
+	
+}
+#container .product-even > p {
+	font-family: 'Farsan', cursive;
+	text-align: justify;
+	font-size: 1.5VW;
+	color: #f1f1f1;
+	
+}
+
+
+
+.control{
+	position: absolute;
+margin-left:auto;
+	
+}
+
+.btn {
+	transform: translateY(0px);
+	transition: 0.3s linear;
+	background: #49C608;
+	border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: #eee;
+	padding: 0;
+	margin: 0;
+	
+}
+
+.btn:hover{transform: translateY(-4px);}
+
+.btn span {
+	font-family: 'Farsan', cursive;
+	transition: transform 0.3s;
+	display: inline-block;
+  padding: 1vw 2vw;
+	font-size: 1.2em;
+	margin:0;
+	
+}
+
+
+.btn .buy {z-index: 3; font-weight: bolder;}
+
+
+
+
+.product-image-even {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: left;
+	width: 40%;
+	display: inline-block;
+}
+.product-image-odd {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 40%;
+	display: inline-block;
+}
+
+#container img {width: 100%;height: 100%;opacity:.30;}
+
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: 'Farsan', cursive;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.9;
+    text-align: left;
+    font-size: 1.8vw;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info h2 {text-align: center;}
+
+.product-image-odd:hover .info{transform: translateX(0);}
+.product-image-even:hover .info{transform: translateX(0);}
+
+.info ul li{transition: 0.3s ease;}
+.info ul li:hover{transform: translateX(15px) scale(1);}
+
+.product-image-odd:hover img {transition: all 0.3s ease-out;}
+.product-image-even:hover img {transition: all 0.3s ease-out;}
+.product-image-odd:hover img {transform: scale(1.2, 1.2);}
+.product-image-even:hover img {transform: scale(1.2, 1.2);}
+</style>
+</head>
 <body class="black">
-
 
 <nav class="sidebar bar-block small hide-small center">
 <a href="#main">
   <img src="assets/images/Name.png" style="width:100%">
   </a>
-  <a href="#home" class="bar-item button padding-large hover-black">
+  <a href="index.html#main" class="bar-item button padding-large hover-black">
     <i class="fa fa-home xxlarge"></i>
     <p>HOME</p>
   </a>
   
-   <a href="#products" class="bar-item button padding-large hover-black">
+   <a href="index.html#products" class="bar-item button padding-large hover-black">
     <i class="fa fa-bookmark xxlarge"></i>
     <p>PRODUCTS</p>
   </a>
-   <a href="#services" class="bar-item button padding-large hover-black">
+   <a href="index.html#services" class="bar-item button padding-large hover-black">
     <i class="fa fa-gear xxlarge"></i>
     <p>SERVICES</p>
   </a>
 
-  <a href="#about" class="bar-item button padding-large hover-black">
+  <a href="index.html#about" class="bar-item button padding-large hover-black">
     <i class="fa fa-user xxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="#contact" class="bar-item button padding-large hover-black">
+  <a href="index.html#contact" class="bar-item button padding-large hover-black">
     <i class="fa fa-envelope xxlarge"></i>
     <p>CONTACT</p>
   </a>
@@ -41,167 +297,130 @@
 <a href="#main"><button id="topbtn"  class="fa fa-arrow-up xxlarge"></button></a>
 <div class="top hide-large hide-medium" id="myNavbar">
   <div class="bar black opacity hover-opacity-off center small">
-    <a href="#home" class="bar-item button" style="width:20% !important">HOME</a>
+    <a href="index.html#main" class="bar-item button" style="width:20% !important">HOME</a>
     
-	 <a href="#products" class="bar-item button" style="width:20% !important">PRODUCTS</a>
-	  <a href="#services" class="bar-item button" style="width:20% !important">SERVICES</a>
-	<a href="#about" class="bar-item button" style="width:20% !important">ABOUT</a>
-    <a href="#contact" class="bar-item button" style="width:20% !important">CONTACT</a>
+	 <a href="index.html#products" class="bar-item button" style="width:20% !important">PRODUCTS</a>
+	  <a href="index.html#services" class="bar-item button" style="width:20% !important">SERVICES</a>
+	<a href="index.html#about" class="bar-item button" style="width:20% !important">ABOUT</a>
+    <a href="index.html#contact" class="bar-item button" style="width:20% !important">CONTACT</a>
   </div>
 </div>
-
 
 <div class="padding-large" id="main">
+<div class="slideshow-container">
+<a href="#liquid">
+<div class="mySlides fade">
+  <img src="assets/images/Design.png" >
+  <div class="text">Liquid Dispenser</div>
+</div>
+</a>
+<a href="#switch">
+<div class="mySlides fade">
+  <img src="assets/images/switch.png" >
+  <div class="text"></div>
+</div>
+</a>
+<a href="www.google.com">
+<div class="mySlides fade">
+  <img src="assets/images/water.png">
+  <div class="text">Comming Soon.....</div>
+</div>
+</a>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-  <header class="container padding-32 center black" id="main">
-    <h1 class="jumbo">EDEDIN</h1>
-    <p>Solution for every Problem</p>
-    <img src="assets/images/logo.png" alt="logo" class="image">
-  </header>
+</div>
+<br>
 
-<!--Idea-->
-<div id="home" class="divid-content ">
-  <div class="content text-grey padding-64" id="home">
-    <h2 class="text-grey justify">Idea</h2>
-    <hr style="width:200px" class="opacity">
-    <p class="text-light-grey center">In this perpetual world of vibrant ideas and technologies we pave a way for you to enter into this new era of lifeline we have ‘N’ number of projects and services that experiences you a virtual platform of smartness and safety.</p>
-	<h2 class="text-grey padding-top justify">Vision & Mission</h2>
-	<hr style="width:200px" class="opacity">
-	<p class="text-light-grey center">To become a best seller for the automated products and expecting to the revert customers to us for quality services and products. To motivate and encourage students to get initiate in automation</p>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
-</div>
-<!-- Products -->
-<div id="products" class="divid ">
- <div class="content text-grey padding-64" >
-    <h2 class="text-grey justify">Products</h2>
-	<hr style="width:200px" class="opacity">
-<div class="products">
-  <div class="col">
-<a href="products.html" style="text-decoration:none;">
-    <div class="card-container">
-      <div class="card">
-        <h4 class="text-light-grey">Auto sanitizer</h4>
-        <span>&rsaquo;</span>
-      </div>
-    </div>
-    </a> 
-  </div>
-  <div class="col">
-<a href="products.html" style="text-decoration:none;">
-    <div class="card-container">
-      <div class="card">
-        <h4 class="text-light-grey">Water level controller</h4>
-       <span>&rsaquo;</span>
-      </div>
-    </div>
-</a>  
-  </div>
-  <div class="col">
-<a href="products.html" style="text-decoration:none;">
 
-    <div class="card-container">
-      <div class="card">
-        <h4 class="text-light-grey">Smart home lighting</h4>
-        <span>&rsaquo;</span>
-      </div>
-    </div>
-    </a>  
-  </div>
-</div>
-</div>
-</div>
-<!-- Services -->
-<div id="services" class="divid ">
-<div class="content text-grey padding-64" >
-    <h2 class="text-grey justify">Services</h2>
-	<hr style="width:200px" class="opacity">
-<div class="products">
-  <div class="colser">
-<a href="#services" style="text-decoration:none;">
-    <div class="card-container">
-      <div class="cservices">
-        <h4 class="text-light-grey">Home Wiring</h4>
-      </div>
-    </div>
-    </a> 
-  </div>
-  <div class="colser">
-<a href="#services" style="text-decoration:none;">
-    <div class="card-container">
-      <div class="cservices">
-        <h4 class="text-light-grey">Engineering projects</h4>
-      </div>
-    </div>
-</a>  
-  </div>
-  <div class="colser">
-<a href="#services" style="text-decoration:none;">
+<div id="liquid" class="sec">
+<div id="container">	
+	<div class="product-odd">
+	<h1>Auto Liquid Dispenser</h1>
+		<p>"Auto Liquid Dispenser is an automation that helps is to dispense liquid automatically when we show our hands in front of it. It is fully automated so that the amount of liquid dispensed is levelled no wastage of liquid takes place. In this pandemic it's mainly used for dispense Sanitizer, Liquid Soap and vice versa. Here is our product with our own automation method."</p>
 
-    <div class="card-container">
-      <div class="cservices">
-        <h4 class="text-light-grey">Hard & Software solutions</h4>
-      </div>
-    </div>
-    </a>  
-  </div>
+<div class="control">
+	<button class="btn">
+   <span class="buy">Buy Now</span>
+ </button>
+</div>		
+</div>
+<div class="product-image-odd">	
+	<img src="assets/images/Design.png" alt="Dispenser">
+<div class="info">
+	<h2>Specialization</h2>
+	<ul>
+		<li><strong>Capacity: </strong>2-10 lts</li>
+		<li><strong>Battery Backup: </strong>+ 1.5 hrs</li>
+		<li><strong>Two modes </strong>Limited & Unlimited</li>
+		<li><strong>Indicator: </strong>Storage level indicator</li>
+		
+	</ul>
 </div>
 </div>
 </div>
-<!-- About -->
-<div id="about" class="divid-content ">
+</div>
+<div id="switch" class="sec">
+<div id="container">	
+	<div class="product-even">
+	<h1>Auto Liquid Dispenser</h1>
+		<p>" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples."</p>
 
-  <div class="content text-grey padding-64" id="home">
-    <h2 class="text-grey justify">About US</h2>
-    <hr style="width:200px" class="opacity">
-    <p class="text-light-grey center">EDEDIN solutions are brought up by the young entrepreneurs from Coimbatore who enhances smart ways in home and
-	industrial applications. Automation is the main concept here we are the solutions for your every problem. We are induced
-	by this society, the lack of technology here plays with our daily life that consumes our precious time. Automation will help 
-	you save time we here to make everything ease and simple for
-	handling and vice versa.</p>
+<div class="control">
+	<button class="btn">
+   <span class="buy">Buy Now</span>
+ </button>
+</div>		
+</div>
+<div class="product-image-even">	
+	<img src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg" alt="Omar Dsoky">
+<div class="info">
+	<h2>Specialization</h2>
+	<ul>
+		<li><strong>Capacity: </strong>2-10 lts</li>
+		<li><strong>Battery Backup: </strong>+ 1.5 hrs</li>
+		<li><strong>Two modes </strong>Limited & Unlimited</li>
+		<li><strong>Indicator: </strong>Storage level indicator</li>
+		
+	</ul>
 </div>
 </div>
-<!-- Contact -->
-<div id="contact" class="divid ">
-  <div class="padding-64 content text-grey" >
-    <h2 class="text-grey justify">Contact us</h2>
-    <hr style="width:200px" class="opacity">
-
-    <div class="section">
-      <p class="text-light-grey"><i class="fa fa-map-marker fa-fw text-white xxlarge margin-right"></i> Thudiyalur, CBE</p>
-      <p class="text-light-grey"><i class="fa fa-phone fa-fw text-white xxlarge margin-right"></i> +91 9384152756</p>
-      <p class="text-light-grey"><i class="fa fa-envelope fa-fw text-white xxlarge margin-right"> </i>ededinsolutions@gmail.com</p>
-    </div><br>
-
-
-  </div>
- 
-
-  <footer class="content padding-64 text-grey xlarge">
-    <i class="fa fa-facebook-official hover-opacity"></i>
-    <i class="fa fa-instagram hover-opacity"></i>
-    <i class="fa fa-snapchat hover-opacity"></i>
-    <i class="fa fa-pinterest-p hover-opacity"></i>
-    <i class="fa fa-twitter hover-opacity"></i>
-    <i class="fa fa-linkedin hover-opacity"></i>
-  </footer>
-
- </div>
 </div>
-
+</div>
+</div>
 <script>
-//Get the button
-var mybutton = document.getElementById("topbtn");
+var slideIndex = 1;
+showSlides(slideIndex);
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
   }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 }
 </script>
+
 </body>
 </html>
