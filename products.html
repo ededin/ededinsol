@@ -283,7 +283,7 @@ text-align: center;}
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);;
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 2;
   cursor: pointer;
 }
@@ -326,28 +326,43 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 }
 
 .alert {
-text-align:center;
-width:100%;
-  padding: 20px;
-  background-color: grey;
-  color: white;
-
-}
-#msg {
 position:fixed;
-display:none;
+width:100%;
+height:100%;
+left:0;
+top:0;
+padding-top: 20%;
+background-color: rgba(0, 0, 0, 0.8);
+color: white;
 z-index:5;
-
+display:none;
 }
 
+
+.alertmsg{
+ background-color: grey;
+ color: white;
+  margin: auto;
+text-align:center;
+padding:2%;
+border-bottom-left-radius: 1.8vw;
+border-top-right-radius: 1.8vw;
+border-bottom-right-radius: 1.8vw;
+  border: 1px solid #888;
+  width: 50%;
+}
+.alertmsg >h5{
+padding:1vw;
+}
 .closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
+  margin-left: 3%;
+  padding:1.5%;
+  color: grey;
+  float: center;
+  font-size: 1vw;
   line-height: 20px;
   cursor: pointer;
+  background-color:white;
   transition: 0.3s;
 }
 
@@ -488,12 +503,12 @@ padding-bottom:20%;
 </style>
 </head>
 <body class="black">
-
-<div class="alert" id="msg">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-  <strong>Done!</strong> We will revert back soon...
+<div class="alert" id="msg" >
+  <div class="alertmsg">
+  <h5><strong>Received your request..!</strong> We will revert back soon...</h5>
+  <span class="closebtn" onclick="hide()">CONTINUE</span> 
+  </div>
 </div>
-
 <nav class="sidebar bar-block small hide-small center">
 <a href="#main">
   <img src="assets/images/Name.png" style="width:100%">
@@ -766,6 +781,9 @@ function on(n) {
 function off() {
   document.getElementById("overlay").style.display = "none";
   document.getElementById("msg").style.display = "block";
+}
+function hide() {
+  document.getElementById("msg").style.display = "none";
 }
 
 
