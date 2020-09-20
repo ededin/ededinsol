@@ -160,6 +160,7 @@ a{
 	 margin-right:auto;
 	}
 .content{
+	 padding: 50px;
      background: #333;
 	 width:80%;
 	 margin-top:55%;
@@ -178,7 +179,6 @@ h1{
 /* header */
 .bg{
 	 background-color:#333;
-	 width:100%;
 }
 
 .intro-header {
@@ -1261,6 +1261,16 @@ width:30vw;
 	 width:100%;
 	}
 	}
+@media (min-width:993px)
+{
+	.modal-content{
+	width:900px
+	}
+	.hide-large{
+		display:none;
+	}
+	
+		}
 
 @media (max-width:992px)
 {
