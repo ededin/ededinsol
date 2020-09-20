@@ -1203,8 +1203,8 @@ width:30vw;
   opacity: .34;
 
 }
-.products{
- width:40vw;
+	 .products{
+		 width:80vw;
     flex-flow: column;
     height: auto;
   }
