@@ -6,77 +6,49 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<body>
 
-<body class="black">
-
-
-<nav class="sidebar bar-block small hide-small center">
-<a href="#main">
-  <img src="assets/images/Name.png" style="width:100%">
-  </a>
-  <a href="#home" class="bar-item button padding-large hover-black">
-    <i class="fa fa-home xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  
-   <a href="#products" class="bar-item button padding-large hover-black">
-    <i class="fa fa-bookmark xxlarge"></i>
-    <p>PRODUCTS</p>
-  </a>
-   <a href="#services" class="bar-item button padding-large hover-black">
-    <i class="fa fa-gear xxlarge"></i>
-    <p>SERVICES</p>
-  </a>
-
-  <a href="#about" class="bar-item button padding-large hover-black">
-    <i class="fa fa-user xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#contact" class="bar-item button padding-large hover-black">
-    <i class="fa fa-envelope xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
-
-<a href="#main"><button id="topbtn"  class="fa fa-arrow-up xxlarge"></button></a>
-<div class="top hide-large hide-medium" id="myNavbar">
+<a href="#"><button class="fa fa-arrow-up xxlarge topbtn"></button></a>
+<div class="top" id="myNavbar">
   <div class="bar black opacity hover-opacity-off center small">
-    <a href="#home" class="bar-item button" style="width:20% !important">HOME</a>
-    
-	 <a href="#products" class="bar-item button" style="width:20% !important">PRODUCTS</a>
-	  <a href="#services" class="bar-item button" style="width:20% !important">SERVICES</a>
-	<a href="#about" class="bar-item button" style="width:20% !important">ABOUT</a>
-    <a href="#contact" class="bar-item button" style="width:20% !important">CONTACT</a>
+    <a href="#home" class="bar-item button" style="width:20% ">HOME</a>
+	 <a href="#products" class="bar-item button" style="width:20% ">PRODUCTS</a>
+	  <a href="#services" class="bar-item button" style="width:20% ">SERVICES</a>
+	<a href="#about" class="bar-item button" style="width:20% ">ABOUT</a>
+    <a href="#contact" class="bar-item button" style="width:20% ">CONTACT</a>
   </div>
 </div>
 
 
-<div class="padding-large" id="main">
+<div id="main">
 
-  <header class="container padding-32 center black" id="main">
-    <h1 class="jumbo">EDEDIN</h1>
-    <p>Solution for every Problem</p>
-    <img src="assets/images/logo.png" alt="logo" class="image">
-  </header>
-
+   <div class="intro-header">
+      <div class="bg-image parallax-bg"></div>
+    </div>
+	</div>
+	<div class="bg">
+<div class="content ">
 <!--Idea-->
 <div id="home" class="divid-content ">
-  <div class="content text-grey padding-64" id="home">
-    <h2 class="text-grey justify">Idea</h2>
+  <div class="text-grey padding-64" data-aos="zoom-in">
+    <h2 class="text-grey justify">We</h2>
     <hr style="width:200px" class="opacity">
     <p class="text-light-grey center">In this perpetual world of vibrant ideas and technologies we pave a way for you to enter into this new era of lifeline we have ‘N’ number of projects and services that experiences you a virtual platform of smartness and safety.</p>
 	<h2 class="text-grey padding-top justify">Vision & Mission</h2>
 	<hr style="width:200px" class="opacity">
-	<p class="text-light-grey center">To become a best seller for the automated products and expecting to the revert customers to us for quality services and products. To motivate and encourage students to get initiate in automation</p>
+	<p class="text-light-grey center">Being Automation Engineers we are looking forward to deliver the best possible automated 
+	products and to impress our customers for the top notch quality of services and products that we provide.</p>
 </div>
 </div>
 <!-- Products -->
-<div id="products" class="divid ">
- <div class="content text-grey padding-64" >
+<div   id="products" class="divid "  >
+ <div class="text-grey padding-64" >
     <h2 class="text-grey justify">Products</h2>
 	<hr style="width:200px" class="opacity">
-<div class="products">
-  <div class="col">
+<div class="products" data-aos="fade-up-right">
+  <div class="col" >
 <a href="products.html" style="text-decoration:none;">
     <div class="card-container">
       <div class="card">
@@ -111,13 +83,13 @@
 </div>
 </div>
 <!-- Services -->
-<div id="services" class="divid ">
-<div class="content text-grey padding-64" >
+<div id="services" class="divid " >
+<div class="text-grey padding-64" >
     <h2 class="text-grey justify">Services</h2>
 	<hr style="width:200px" class="opacity">
-<div class="products">
+<div class="products" data-aos="fade-up-left">
   <div class="colser">
-<a href="#services" style="text-decoration:none;">
+<a href="services.html" style="text-decoration:none;">
     <div class="card-container">
       <div class="cservices">
         <h4 class="text-light-grey">Home Wiring</h4>
@@ -126,7 +98,7 @@
     </a> 
   </div>
   <div class="colser">
-<a href="#services" style="text-decoration:none;">
+<a href="services.html" style="text-decoration:none;">
     <div class="card-container">
       <div class="cservices">
         <h4 class="text-light-grey">Engineering projects</h4>
@@ -135,7 +107,7 @@
 </a>  
   </div>
   <div class="colser">
-<a href="#services" style="text-decoration:none;">
+<a href="services.html" style="text-decoration:none;">
 
     <div class="card-container">
       <div class="cservices">
@@ -150,19 +122,21 @@
 <!-- About -->
 <div id="about" class="divid-content ">
 
-  <div class="content text-grey padding-64" id="home">
+  <div class=" text-grey padding-64" data-aos="zoom-in">
     <h2 class="text-grey justify">About US</h2>
     <hr style="width:200px" class="opacity">
-    <p class="text-light-grey center">EDEDIN solutions are brought up by the young entrepreneurs from Coimbatore who enhances smart ways in home and
-	industrial applications. Automation is the main concept here we are the solutions for your every problem. We are induced
-	by this society, the lack of technology here plays with our daily life that consumes our precious time. Automation will help 
-	you save time we here to make everything ease and simple for
-	handling and vice versa.</p>
+    <p class="text-light-grey center">EDEDIN Automation is here to take mankind to the next dimension of existence, 
+	The company is brought up by young entrepreneurs from Coimbatore, India who enhances smart ways in home and industrial 
+	applications. Automation is the main concept here we have the solutions for every engineering problems. We are induced by this society, 
+	the lack of technology here plays with our daily life consuming our precious time. Automation will save you time and EDEDIN 
+	is here to make life easy and simple.</p>
 </div>
 </div>
+
+
 <!-- Contact -->
-<div id="contact" class="divid ">
-  <div class="padding-64 content text-grey" >
+<div id="contact" class="divid " data-aos="zoom-out">
+  <div class="padding-64 text-grey">
     <h2 class="text-grey justify">Contact us</h2>
     <hr style="width:200px" class="opacity">
 
@@ -174,34 +148,42 @@
 
 
   </div>
- 
+ </div>
 
-  <footer class="content padding-64 text-grey xlarge">
-    <i class="fa fa-facebook-official hover-opacity"></i>
-    <i class="fa fa-instagram hover-opacity"></i>
-    <i class="fa fa-snapchat hover-opacity"></i>
-    <i class="fa fa-pinterest-p hover-opacity"></i>
-    <i class="fa fa-twitter hover-opacity"></i>
-    <i class="fa fa-linkedin hover-opacity"></i>
+  <footer class=" padding-64 text-grey xlarge">
+   <a href="https://www.instagram.com/eded.in/"> <i class="fa fa-facebook-official hover-opacity"></i></a>
+    <a href="https://www.instagram.com/eded.in/"> <i class="fa fa-instagram hover-opacity"></i></a>
   </footer>
 
  </div>
 </div>
 
 <script>
-//Get the button
-var mybutton = document.getElementById("topbtn");
+AOS.init({
+  duration: 1000
+});
+var $parallaxElement = $('.parallax-bg');
+var elementHeight = $parallaxElement.outerHeight();
+function parallax() {
+ 
+  var scrollPos = $(window).scrollTop();
+  var transformValue = scrollPos/40;
+  var opacityValue =  1 - ( scrollPos / 2000);
+  var blurValue = Math.min(scrollPos / 100, 3);
+  
+  if ( scrollPos < elementHeight ) {
+  
+    $parallaxElement.css({
+      'transform': 'translate3d(0, -' + transformValue + '%, 0)',
+      'opacity': opacityValue,
+      '-webkit-filter' : 'blur('+blurValue+'px)'
+    });
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
   }
 }
+
+$(window).scroll(function() { parallax()});
+
 </script>
 </body>
 </html>
