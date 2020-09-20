@@ -743,7 +743,7 @@ text-align: center;}
 .product-image-odd:hover img {transform: scale(1.2, 1.2);}
 .product-image-even:hover img {transform: scale(1.2, 1.2);}
 
-#overlay {
+.overlay {
   position: fixed;
   display: none;
   width: 100%;
