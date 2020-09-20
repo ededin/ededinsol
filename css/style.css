@@ -179,6 +179,8 @@ h1{
 /* header */
 .bg{
 	 background-color:#333;
+	margin-top: 55%;
+
 }
 
 .intro-header {
@@ -1249,7 +1251,7 @@ width:30vw;
 	opacity: 1;
 }
 .intro-header .bg-image {
-  background: url("../assets/images/EDLOGO916.png") no-repeat;
+  background: url("../assets/images/EDLOGO916.png") center center no-repeat;
   background-size: contain;
 }
 .bg{
@@ -1257,6 +1259,7 @@ width:30vw;
 }
 
 .content{
+
 	 width:100%;
 	}
 	}
