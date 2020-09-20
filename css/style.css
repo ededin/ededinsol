@@ -1205,7 +1205,7 @@ width:30vw;
 
 }
 	 .products{
-		 width:10vw;
+		 width:auto;
     flex-flow: column;
     height: auto;
   }
