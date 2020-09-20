@@ -1205,7 +1205,7 @@ width:30vw;
 
 }
 	 .products{
-		 width:1vw;
+		 width:10vw;
     flex-flow: column;
     height: auto;
   }
@@ -1242,7 +1242,7 @@ width:30vw;
 }
 .intro-header .bg-image {
   background: url("../assets/images/EDLOGO916.png") center center no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .bg{
 	margin-top: 200%;
