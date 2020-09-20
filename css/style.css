@@ -227,6 +227,7 @@ h1{
   display: flex;
   margin:auto;
   flex-flow: row;
+  align-items:center;
 }
 .col{
   height:  100%;
@@ -1204,7 +1205,7 @@ width:30vw;
 
 }
 	 .products{
-		 width:80vw;
+		 width:40vw;
     flex-flow: column;
     height: auto;
   }
