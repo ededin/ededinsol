@@ -64,7 +64,7 @@
 </div>
 
 
-<div id="overlay">
+<div class="overlay" id="ld">
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 <form action="https://docs.google.com/forms/d/e/1FAIpQLSdgz4Sn2yHrkpVSDOwaL03jDg-xKwhpOYTX8GAhxZ-kGFo0Kg/formResponse"
       target="hidden_iframe"
@@ -103,7 +103,7 @@
 		 <input type="hidden" name="fvv" value="1">
     <input type="hidden" name="fbzx" value="-2932700254903517657">
 	 <input type="hidden" name="pageHistory" value="0">
-			<input class="submit-btn" type="submit" value="Submit" onclick="off()">
+			<input class="submit-btn" type="submit" value="Submit" onclick="off('ld')">
 		</form>	
 	</div>
 	</div>
@@ -119,7 +119,7 @@
 
 <div class="control">
 	<button class="btn">
-   <span class="buy" onclick="on()">Buy Now</span>
+   <span class="buy" onclick="on(ld)">Buy Now</span>
  </button>
 </div>		
 </div>
@@ -261,11 +261,11 @@ function showSlides(n) {
   }
 
 function on(n) {
-  document.getElementById("overlay").style.display = "block";
+  document.getElementById(n).style.display = "block";
 }
 
-function off() {
-  document.getElementById("overlay").style.display = "none";
+function off(n) {
+  document.getElementById(n).style.display = "none";
   document.getElementById("msg").style.display = "block";
 }
 function hide() {
