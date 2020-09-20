@@ -227,7 +227,6 @@ h1{
   display: flex;
   margin:auto;
   flex-flow: row;
-  perspective-origin: center;
   align-items:center;
 }
 .col{
@@ -1099,7 +1098,6 @@ padding-top: 50%;
   .products{
     flex-flow: column;
 	width:80vw;
-    perspective: none;
     height: auto;
   }
   .cservices > h4{
@@ -1215,7 +1213,6 @@ width:30vw;
 	 .products{
 		 width:80vw;
     flex-flow: column;
-    perspective: none;
     height: auto;
   }
   .cservices > h4{
