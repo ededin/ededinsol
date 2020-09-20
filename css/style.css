@@ -1093,11 +1093,6 @@ padding-top: 50%;
 		}
 		}
 @media (max-width: 540px){
-  .products{
-    flex-flow: column;
-	width:70vw;
-    height: auto;
-  }
   .cservices > h4{
 	opacity:1;
 
@@ -1208,8 +1203,8 @@ width:30vw;
   opacity: .34;
 
 }
-	 .products{
-		 width:70vw;
+.products{
+ width:40vw;
     flex-flow: column;
     height: auto;
   }
