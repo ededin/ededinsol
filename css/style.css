@@ -1249,8 +1249,8 @@ width:30vw;
 	opacity: 1;
 }
 .intro-header .bg-image {
-  background: url("../assets/images/EDLOGO916.png");
-  background-size: cover;
+  background: url("../assets/images/EDLOGO916.png") no-repeat;
+  background-size: contain;
 }
 .bg{
 	margin-top: 200%;
