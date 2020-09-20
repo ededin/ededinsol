@@ -130,8 +130,6 @@
 	is here to make life easy and simple.</p>
 </div>
 </div>
-
-
 <!-- Contact -->
 <div id="contact" class="divid " data-aos="zoom-out">
   <div class=" text-grey">
@@ -162,6 +160,7 @@ AOS.init({
 });
 var $parallaxElement = $('.parallax-bg');
 var elementHeight = $parallaxElement.outerHeight();
+
 function parallax() {
  
   var scrollPos = $(window).scrollTop();
@@ -176,11 +175,16 @@ function parallax() {
       'opacity': opacityValue,
       '-webkit-filter' : 'blur('+blurValue+'px)'
     });
-
+	
+    
   }
+  
 }
 
-$(window).scroll(function() { parallax()});
+
+$(window).scroll(function() {
+  parallax();
+});
 
 </script>
 </body>
