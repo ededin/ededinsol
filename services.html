@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html>
+<title>Services</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<style>
 
+
+
+</style>
+<body class="black">
+
+<a href="#main"><button  class="fa fa-arrow-up xxlarge topbtn"></button></a>
+<div class="top" id="myNavbar">
+  <div class="bar black opacity hover-opacity-off center small">
+    <a href="index.html" class="bar-item button" style="width:20% !important">HOME</a>
+    
+	 <a href="products.html" class="bar-item button" style="width:20% !important">PRODUCTS</a>
+	  <a href="#" class="bar-item button" style="width:20% !important">SERVICES</a>
+	<a href="index.html#about" class="bar-item button" style="width:20% !important">ABOUT</a>
+    <a href="#contact" class="bar-item button" style="width:20% !important">CONTACT</a>
+  </div>
+</div>
+
+
+    <div class="intro-header">
+      <div class="bg-image parallax-bg"></div>
+    </div>
+	<div class="bg">
+    <div class="content">
+     <ul class="tilesWrap">
+	<li>
+		<h2>01</h2>
+		<h3>Engineering Projects</h3>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting   
+			industry. Lorem Ipsum has been the industry's standard dummy text ever 
+			since the 1500s.
+		</p>
+		<button>Book Now</button>
+	</li>
+	<li>
+		<h2>02</h2>
+		<h3>Home Automation</h3>
+		<p>
+			When an unknown printer took a galley of type and scrambled it to make 
+			a type specimen book. It has survived not only five centuries.
+		</p>
+		<button>Book Now</button>
+	</li>
+	<li>
+		<h2>03</h2>
+		<h3>Industry Automation</h3>
+		<p>
+			But also the leap into electronic typesetting, remaining essentially 
+			unchanged. It was popularised in the 1960s.
+		</p>
+		<button>Book Now</button>
+	</li>
+	<li>
+		<h2>04</h2>
+		<h3>Agriculture Automation</h3>
+		<p>
+			With the release of Letraset sheets containing Lorem Ipsum passages,  
+			and more recently with desktop publishing software like Aldus 
+		</p>
+		<button>Book Now</button>
+	</li>
+	<li>
+		<h2>05</h2>
+		<h3>Computer Service</h3>
+		<p>
+			With the release of Letraset sheets containing Lorem Ipsum passages,  
+			and more recently with desktop publishing software like Aldus 
+		</p>
+		<button>Book Now</button>
+	</li>
+	<li>
+		<h2>06</h2>
+		<h3>Control Panel Wiring</h3>
+		<p>
+			With the release of Letraset sheets containing Lorem Ipsum passages,  
+			and more recently with desktop publishing software like Aldus 
+		</p>
+		<button>Book Now</button>
+	</li>
+	<li>
+		<h2>07</h2>
+		<h3>Home Wiring</h3>
+		<p>
+			With the release of Letraset sheets containing Lorem Ipsum passages,  
+			and more recently with desktop publishing software like Aldus 
+		</p>
+		<button>Book Now</button>
+	</li>
+</ul>
+    </div>
+	</div>
+
+<script>
+var $parallaxElement = $('.parallax-bg');
+var elementHeight = $parallaxElement.outerHeight();
+
+function parallax() {
+ 
+  var scrollPos = $(window).scrollTop();
+  var transformValue = scrollPos/40;
+  var opacityValue =  1 - ( scrollPos / 2000);
+  var blurValue = Math.min(scrollPos / 100, 3);
+  
+  if ( scrollPos < elementHeight ) {
+  
+    $parallaxElement.css({
+      'transform': 'translate3d(0, -' + transformValue + '%, 0)',
+      'opacity': opacityValue,
+      '-webkit-filter' : 'blur('+blurValue+'px)'
+    });
+	
+    
+  }
+  
+}
+
+
+$(window).scroll(function() {
+  parallax();
+});
+</script>
+</body>
+</html>
