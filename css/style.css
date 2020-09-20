@@ -227,7 +227,6 @@ h1{
   display: flex;
   margin:auto;
   flex-flow: row;
-  perspective: 1000px;
   perspective-origin: center;
   align-items:center;
 }
