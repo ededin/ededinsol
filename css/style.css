@@ -21,6 +21,7 @@ abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underli
 
 /* End extract */
 html,body{font-size:15px;line-height:1.5}
+html{overflow-x:hidden}
 h1{
 	font-size:36px
 	}
@@ -163,7 +164,6 @@ a{
 	 padding: 50px;
      background: #333;
 	 width:80%;
-	 margin-top:55%;
 	}
 .auto{
 	 max-width:1140px;
