@@ -1005,9 +1005,10 @@ padding-top: 50%;
 	font-size: 5vw;
 	margin: 0;
 	position: absolute;
-	opacity: 0.2;
+	opacity: .09;
 	top: 5vw;
 	right: 2vw;
+	color:#fff;
 	transition: all 0.3s ease-in-out;
 }
 .tilesWrap li h3 {
@@ -1061,7 +1062,7 @@ padding-top: 50%;
 }
 .tilesWrap li:hover h2 {
 	top: 0px;
-	opacity: 0.6;
+	opacity: 0.7;
 }
 
 .tilesWrap li:before {
