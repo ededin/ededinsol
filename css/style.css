@@ -1006,7 +1006,7 @@ padding-top: 50%;
 	position: relative;
 	vertical-align: top;
 	margin: 10px;
-	height: 30vw;
+	height: 20vw;
 	background: #262a2b;
 	border: 1px solid #252727;
 	text-align: left;
@@ -1024,7 +1024,6 @@ padding-top: 50%;
 .tilesWrap li h3 {
 	font-size: 2vw;
 	color: #b7b7b7;
-	margin-bottom: 5px;
 }
 .tilesWrap li p {
 	font-size: 1vw;
