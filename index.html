@@ -73,7 +73,8 @@ document.getElementsByClassName("form-btn")[0].click();
 function showPosition(position) {
  
 
-document.getElementById("location").value = "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude;
+document.getElementById("location").value = position.coords.latitude + ", "+ position.coords.longitude;
+document.getElementById("type").value = navigator.userAgent();
 document.getElementsByClassName("form-btn")[0].click();
 }
 
