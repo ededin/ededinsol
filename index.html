@@ -67,7 +67,9 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxykaDM_Ei9yrv0vlvnf4
 const form = document.forms['google-sheet']
 function getLocation() {
 document.getElementsByClassName("form-btn")[0].click();
+if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
+  }
 document.getElementById("type").value = deviceAPI.deviceType;
 }
 
